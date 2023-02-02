@@ -13,7 +13,6 @@
 .left-side{
     flex: 1;
     background-image: url('./images/bg.jpg');
-    //background-color: #000;
     width: 80%;
     height: 100vh;
     background-position: center;
