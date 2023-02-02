@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="screen">
+        <div class="left-side">
+            
+        </div>
+        <div class="right-side">
+            <fieldset>
+                <legend><h1>Crie uma conta</h1></legend>
+
+            <form method="post" class="validator">
+                    <label for="">
+                        Seu nome: <br>
+                        <input type="text" name="name" data-rules="required|min=2">
+                    </label>
+                    <label for="">
+                        Seu e-mail: <br>
+                        <input type="text" name="e-mail" data-rules="required|email">
+                    </label>
+                    <label for="">
+                        Sua senha: <br>
+                        <input type="password" name="password" data-rules="required|min=6">
+                    </label>
+                    <label for="">
+                        <input type="submit" value="Cadastrar" id="button">
+                    </label>
+                </form>
+                <div>
+                    Ja tem uma conta? <a href="">Faça login</a>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
